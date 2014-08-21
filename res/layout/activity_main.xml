@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	
+    <GridLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left"
+		android:columnCount="4"
+		android:layout_marginLeft="10dp"
+		android:orientation="horizontal" >
+		
+		<TextView
+	        android:text="number of core"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    <EditText
+	        android:id="@+id/edit_nCPU"
+	        android:layout_width="50dp"
+	        android:inputType="number" >
+	        <requestFocus />
+	    </EditText>
+	    
+	    <TextView
+	        android:text="clock cpeed"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    <EditText
+	        android:id="@+id/edit_clockSpeed"
+	        android:layout_width="50dp"
+	        android:inputType="numberDecimal" >
+	    </EditText>
+	    
+		<TextView
+	        android:text="number of FPU"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    <EditText
+	        android:id="@+id/edit_nFPU"
+	        android:layout_width="50dp"
+	        android:inputType="number" >
+	    </EditText>
+	
+	    <TextView
+	        android:text="Memory B/W"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    <EditText
+	        android:id="@+id/edit_bandWidth"
+	        android:layout_width="50dp"
+	        android:inputType="numberDecimal" >
+	    </EditText>
+	    
+	    <Button
+	        android:id="@+id/showBtn" 
+	        android:text="show"
+	        android:layout_height="40dp" 
+	        />
+		
+	</GridLayout>        
+	
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="15dp"
+	    android:layout_marginRight="5dp"
+	    android:gravity="bottom|left"
+	    android:text="GFlops/s"
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    android:textColor="@android:color/holo_green_light"
+	    android:textSize="10sp" />
+	
+	<LinearLayout
+	    android:id="@+id/graphLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="250dp"
+	    android:layout_marginLeft="3dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginBottom="3dp" 
+	    android:orientation="vertical" />
+	
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="5dp"
+	    android:gravity="right"
+	    android:text="operation intensity(Flops/Byte)"
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    android:textColor="@android:color/holo_green_light"
+	    android:textSize="10sp" />
+	
+	<TextView
+	    android:id="@+id/oIntensityTv"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:gravity="left"
+	    android:text="Operation intensity : "
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    android:textColor="@android:color/holo_blue_dark"
+	    android:textSize="12sp" />
+	
+	<TextView
+	    android:id="@+id/peakFPointTv"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:gravity="left"
+	    android:text="Peak floating-point : "
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    android:textColor="@android:color/holo_blue_dark"
+	    android:textSize="12sp" />	
+	    
+</LinearLayout>
